@@ -76,7 +76,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/Vishwas-10/Vishwas-s-Portfolio"
+            href="https://github.com/okyash007/Portfolio"
             path={path}
             display="inline-flex"
             alignItems="center"

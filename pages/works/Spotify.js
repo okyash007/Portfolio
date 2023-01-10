@@ -29,13 +29,13 @@ const Work = () => (
       <List ml={4} my={4}>
       <ListItem>
           <Meta>Github</Meta>
-          <Link href="https://github.com/Vishwas-10/Hand-Gesture-Recognition">
+          <Link href="https://github.com/okyash007/spotify">
           Spotify<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Github</Meta>
-          <Link href="https://github.com/Vishwas-10/Hand-Gesture-Recognition">
+          <Meta>Deploy</Meta>
+          <Link href="https://okyash007-spotify.vercel.app/">
           Spotify.vercel.app<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

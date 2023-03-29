@@ -40,9 +40,5 @@ $PROJECT_ROOT
 └── public
 ```
 ----
-# Preview
-![Screenshot](https://github.com/Vishwas-10/Vishwas-s-Portfolio/blob/main/preview/p2.png)
-![Screenshot](https://github.com/Vishwas-10/Vishwas-s-Portfolio/blob/main/preview/p3.png)
-![Screenshot](https://github.com/Vishwas-10/Vishwas-s-Portfolio/blob/main/preview/p4.png)
 
 

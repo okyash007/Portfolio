@@ -9,7 +9,7 @@
 
 Welcome to my *Presonal Portfolio*
 
-![Screenshot](https://github.com/Vishwas-10/Vishwas-s-Portfolio/blob/main/preview/p1.png)
+
 
  
 ---

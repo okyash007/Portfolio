@@ -15,10 +15,9 @@ const Works = () => (
         Projects
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid>
         <Section>
           <WorkGridItem
-            id="SortingVisualizer"
             title="Sorting Visualizer"
             thumbnail={thumbComs}
           >
@@ -28,7 +27,6 @@ const Works = () => (
         </Section>
         <Section>
           <WorkGridItem
-            id="ProjectFair"
             title="Project Fair"
             thumbnail={thumbadulting101}
           >
@@ -38,7 +36,6 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="HomeRent"
             title="Home Rentals"
             thumbnail={thumbFakeFace}
           >

@@ -4,21 +4,28 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  HStack,
+  Wrap
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoBehance} from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoBehance } from 'react-icons/io5'
 import Image from 'next/image'
+import {
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  TagRightIcon,
+  TagCloseButton
+} from '@chakra-ui/react'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -43,7 +50,6 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Yash Verma
           </Heading>
-          <p>4th year B.Tech. undergrad</p>
           <p>Full Stack Developer </p>
         </Box>
         <Box
@@ -78,50 +84,14 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Hello! 👋 I am Yash Verma a 4th year undergrad at Jaypee Institute of Information Technology, Noida, UP. 
-          I enjoy taking complex problems and turning them into simple and beautiful webpages, I also love the logic and structure of coding
-          and always strive to write elegant and efficient code whether it be C++, Python, HTML, CSS or JavaScript.
+          Hello! 👋 I am Yash Verma a 4th year undergrad at Jaypee Institute of
+          Information Technology, Noida, UP. I enjoy taking complex problems and
+          turning them into simple and beautiful webpages, I also love the logic
+          and structure of coding and always strive to write elegant and
+          efficient code whether it be C++, Python, HTML, CSS or JavaScript.
           <br></br>
-          When I'm not coding, you'll find me playing games, hanging out with my friends and exploring the beauty of life.
-        </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Projects
-            </Button>
-          </NextLink>
-        </Box>
-      </Section>
-
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>2000</BioYear>
-          Born in Meerut, UP , India.
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          Started B.tech. at JIIT, Noida, UP
-        </BioSection>
-        <BioSection>
-          <BioYear>2020</BioYear>
-          Member of Graphic Team, Prismatic (Fest, JIIT Noida)
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          gonna complete my B.tech. at JIIT, Noida, UP
-        </BioSection>
-        
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥ 
-        </Heading>
-        <Paragraph>
-          Coding, Playing games , Photography, Graphic Designing
+          When I'm not coding, you'll find me playing games, hanging out with my
+          friends and exploring the beauty of life.
         </Paragraph>
       </Section>
 
@@ -129,11 +99,31 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Skills
         </Heading>
-        <li>Javascript</li>
-        <li>React.js</li>
-        <li>Next.js</li>
-        <li>TypeScript</li>
-        <li>Tailwind CSS</li>
+        <Wrap>
+          <Tag padding={"0.5rem"}>JavaScript</Tag>
+          <Tag padding={"0.5rem"}>TypeScript</Tag>
+          <Tag padding={"0.5rem"}>tailwindcss</Tag>
+          <Tag padding={"0.5rem"}>chakra UI</Tag>
+          <Tag padding={"0.5rem"}>Framer Motion</Tag>
+          <Tag padding={"0.5rem"}>React.js</Tag>
+          <Tag padding={"0.5rem"}>Next.js</Tag>
+          <Tag padding={"0.5rem"}>Three.js</Tag>
+          <Tag padding={"0.5rem"}>Redux</Tag>
+          <Tag padding={"0.5rem"}>Recoil</Tag>
+          <Tag padding={"0.5rem"}>Node.js</Tag>
+          <Tag padding={"0.5rem"}>Expres.js</Tag>
+          <Tag padding={"0.5rem"}>Prisma</Tag>
+          <Tag padding={"0.5rem"}>MongoDB</Tag>
+          <Tag padding={"0.5rem"}>Postgress SQL</Tag>
+          <Tag padding={"0.5rem"}>Docker</Tag>
+        </Wrap>
+        <Box align="center" my={4}>
+          <NextLink href="/works" passHref scroll={false}>
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Projects
+            </Button>
+          </NextLink>
+        </Box>
       </Section>
 
       <Section delay={0.3}>
@@ -177,9 +167,15 @@ const Home = () => (
         </List>
 
         <Box align="center" my={4}>
-          <NextLink href="https://drive.google.com/file/d/1IAah0-Heh_f3gWIHOWhqbJv2SnBLBnQf/view?usp=sharing" passHref scroll={false}>
+          <NextLink
+            href="https://drive.google.com/file/d/1IAah0-Heh_f3gWIHOWhqbJv2SnBLBnQf/view?usp=sharing"
+            passHref
+            scroll={false}
+          >
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-            <a href="https://drive.google.com/file/d/1IAah0-Heh_f3gWIHOWhqbJv2SnBLBnQf/view?usp=sharing">Download Resume</a> 
+              <a href="https://drive.google.com/file/d/1IAah0-Heh_f3gWIHOWhqbJv2SnBLBnQf/view?usp=sharing">
+                Download Resume
+              </a>
             </Button>
           </NextLink>
         </Box>

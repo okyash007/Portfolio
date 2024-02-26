@@ -1,7 +1,7 @@
 {
-  "name": "Vishwas's-Homepage",
+  "name": "okyash007",
   "version": "1.0.0",
-  "description": "Vishwas Saini's website",
+  "description": "",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Vishwas Saini",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",

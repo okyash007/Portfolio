@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay, Button } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, Button, useColorModeValue } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { useTheme } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
@@ -29,10 +29,10 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
 
   return (
     <Box
-      w="100%"
-      bgColor={'#ffffff1a'}
-      padding={'1rem'}
-      borderRadius={'0.5rem'}
+      borderRadius="lg"
+      p={5}
+      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      css={{ backdropFilter: 'blur(10px)' }}
     >
       <Text mt={2} fontSize={30} margin={0}>
         {title}
@@ -40,10 +40,6 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
       <Text opacity={0.6} fontSize={14}>
         {children}
       </Text>
-      <Box style={{ display: 'flex', gap:"0.5rem", alignItems:"center", padding:"0.5rem 0 0 0" }}>
-        <IoLogoGithub size={'1.5rem'} />
-        <IoLink size={'2rem'} />
-      </Box>
     </Box>
   )
 }

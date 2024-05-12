@@ -66,17 +66,35 @@ const Works = () => (
               <Tag>Styled components</Tag>
             </Wrap>
             <Wrap>
-              <Link href="https://github.com/okyash007/promanage-frontend">
+              <Link href="https://github.com/okyash007/pro-manage">
                 code
               </Link>
-              <Link href="https://promanage-frontend.vercel.app">live</Link>
+              <Link href="https://pro-manage-yash.vercel.app">live</Link>
             </Wrap>
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section>
+          <WorkGridItem
+            id="chess-game"
+            thumbnail={thumbHandGesture}
+            title="chess-game"
+          >
+            Play Chess with your friend here
+            <Wrap style={{ marginTop: '0.5rem' }}>
+              <Tag>express</Tag>
+              <Tag>Web Sockets</Tag>
+            </Wrap>
+            <Wrap>
+              <Link href="https://github.com/okyash007/chess-game">code</Link>
+              <Link href="https://chess-game-yash-68g3.onrender.com">live</Link>
+            </Wrap>
+          </WorkGridItem>
+        </Section>
+
+        <Section>
           <WorkGridItem title="Gitsta" thumbnail={thumbFakeFace}>
-            A Sicoal Media aap where you can create posts and chat in realtime.
+            A Social Media web aap where you can create posts and chat in realtime.
             <Wrap style={{ marginTop: '0.5rem' }}>
               <Tag>React.js</Tag>
               <Tag>postgressSQL</Tag>
@@ -86,7 +104,7 @@ const Works = () => (
               <Tag>Web Sockets</Tag>
             </Wrap>
             <Wrap>
-              <Link href="https://github.com/okyash007/gitsta-frontend">
+              <Link href="https://github.com/okyash007/social-app">
                 code
               </Link>
               <Link href="https://gitsta-frontend.vercel.app">live</Link>
@@ -119,6 +137,8 @@ const Works = () => (
             </Wrap>
           </WorkGridItem>
         </Section>
+
+        
       </SimpleGrid>
     </Container>
   </Layout>

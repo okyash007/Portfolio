@@ -84,14 +84,26 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Hello! 👋 I am Yash Verma a 4th year undergrad at Jaypee Institute of
-          Information Technology, Noida, UP. I enjoy taking complex problems and
-          turning them into simple and beautiful webpages, I also love the logic
-          and structure of coding and always strive to write elegant and
-          efficient code whether it be C++, Python, HTML, CSS or JavaScript.
-          <br></br>
-          When I'm not coding, you'll find me playing games, hanging out with my
-          friends and exploring the beauty of life.
+          Hello! 👋 I'm Yash Verma, a 4th-year undergraduate student at Jaypee
+          Institute of Information Technology in Noida, UP. I have a passion for
+          transforming complex problems into simple and elegant web
+          applications. My expertise lies in front-end development with
+          technologies like JavaScript, TypeScript, React.js, and Next.js,
+          enabling me to craft responsive and engaging user interfaces.
+        </Paragraph>
+        <Paragraph>
+          On the backend, I am proficient in Node.js, Express.js, and Golang,
+          where I build robust and scalable solutions. I work with databases
+          such as MongoDB and PostgreSQL, and I am experienced in using Docker
+          and AWS for efficient deployment and application management.
+          Additionally, my knowledge of Redis and Kafka helps in managing data
+          and ensuring effective communication across systems.
+        </Paragraph>
+        <Paragraph>
+          I constantly strive to write clean, elegant, and efficient code across
+          the various programming languages I work with. Outside of coding, I
+          enjoy playing games, spending time with friends, and exploring the
+          beauty of life.
         </Paragraph>
       </Section>
 
@@ -100,30 +112,24 @@ const Home = () => (
           Skills
         </Heading>
         <Wrap>
-          <Tag padding={"0.5rem"}>JavaScript</Tag>
-          <Tag padding={"0.5rem"}>TypeScript</Tag>
-          <Tag padding={"0.5rem"}>tailwindcss</Tag>
-          <Tag padding={"0.5rem"}>chakra UI</Tag>
-          <Tag padding={"0.5rem"}>Framer Motion</Tag>
-          <Tag padding={"0.5rem"}>React.js</Tag>
-          <Tag padding={"0.5rem"}>Next.js</Tag>
-          <Tag padding={"0.5rem"}>Three.js</Tag>
-          <Tag padding={"0.5rem"}>Redux</Tag>
-          <Tag padding={"0.5rem"}>Recoil</Tag>
-          <Tag padding={"0.5rem"}>Node.js</Tag>
-          <Tag padding={"0.5rem"}>Expres.js</Tag>
-          <Tag padding={"0.5rem"}>Prisma</Tag>
-          <Tag padding={"0.5rem"}>MongoDB</Tag>
-          <Tag padding={"0.5rem"}>Postgress SQL</Tag>
-          <Tag padding={"0.5rem"}>Docker</Tag>
+          <Tag padding={'0.5rem'}>JavaScript</Tag>
+          <Tag padding={'0.5rem'}>TypeScript</Tag>
+          <Tag padding={'0.5rem'}>React.js</Tag>
+          <Tag padding={'0.5rem'}>Next.js</Tag>
+          <Tag padding={'0.5rem'}>Node.js</Tag>
+          <Tag padding={'0.5rem'}>Expres.js</Tag>
+          <Tag padding={'0.5rem'}>Golang</Tag>
+          <Tag padding={'0.5rem'}>Solidity</Tag>
+          <Tag padding={'0.5rem'}>Ethers.js</Tag>
+          <Tag padding={'0.5rem'}>Truffle</Tag>
+          <Tag padding={'0.5rem'}>Inter Planetary File System</Tag>
+          <Tag padding={'0.5rem'}>Redis</Tag>
+          <Tag padding={'0.5rem'}>Kafka</Tag>
+          <Tag padding={'0.5rem'}>MongoDB</Tag>
+          <Tag padding={'0.5rem'}>Postgress SQL</Tag>
+          <Tag padding={'0.5rem'}>Docker</Tag>
+          <Tag padding={'0.5rem'}>AWS</Tag>
         </Wrap>
-        <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Projects
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
 
       <Section delay={0.3}>
@@ -153,32 +159,7 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://www.behance.net/be_a_dazzler" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoBehance />}
-              >
-                @DazZlEr
-              </Button>
-            </Link>
-          </ListItem>
         </List>
-
-        <Box align="center" my={4}>
-          <NextLink
-            href="https://drive.google.com/file/d/1IAah0-Heh_f3gWIHOWhqbJv2SnBLBnQf/view?usp=sharing"
-            passHref
-            scroll={false}
-          >
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              <a href="https://drive.google.com/file/d/1IAah0-Heh_f3gWIHOWhqbJv2SnBLBnQf/view?usp=sharing">
-                Download Resume
-              </a>
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>

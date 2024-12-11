@@ -19,8 +19,7 @@ const Logo = () => {
       <a>
         <LogoBox>
           <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
+            fontFamily="'Open Sans', sans-serif"
             fontWeight="bold"
             ml={3}
           >
